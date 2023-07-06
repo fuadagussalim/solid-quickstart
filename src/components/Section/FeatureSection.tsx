@@ -31,9 +31,9 @@ const FeaturedSection = () => {
                   <span class="badge bg-design rounded-pill ms-auto">14</span>
                 </div>
                 {isImageReady() && (
-                   <img src="https://drive.google.com/uc?export=view&id=1QlaiYn1fLrV333DFt0t_zOWjsPbdCcQ-" alt="Image" />
+                   <img src="https://drive.google.com/uc?export=view&id=1QlaiYn1fLrV333DFt0t_zOWjsPbdCcQ-" class="custom-block-image img-fluid" alt="Image" />
                     )}
-                <img src="https://drive.google.com/uc?export=view&id=1QlaiYn1fLrV333DFt0t_zOWjsPbdCcQ-" class="custom-block-image img-fluid" alt="" />
+                
               </a>
             </div>
           </div>
