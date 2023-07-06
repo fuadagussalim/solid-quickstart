@@ -32,7 +32,7 @@ function App() {
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet"/>
 
-        <link href="templatemo-topic-listing.css" rel="stylesheet"/>  
+        <link href="root.css" rel="stylesheet"/>  
 
       </Head>
       <Body>
