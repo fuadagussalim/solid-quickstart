@@ -1,5 +1,6 @@
 
-import { createEffect, createSignal } from 'solid-js';
+import { createEffect, createSignal, onMount  } from 'solid-js';
+
 
 const FeaturedSection = () => {
   const [isImageReady, setIsImageReady] = createSignal(false);
@@ -13,6 +14,16 @@ const FeaturedSection = () => {
   
     img.src = 'https://drive.google.com/uc?export=view&id=1a9M9RClIgU8vaxqBPWvW5grFdQZME-NB'; // Replace with your image URL
   });
+  onMount(() => {
+    // Set the visibility signal to true after a delay or based on certain conditions
+    setTimeout(() => setIsVisible(true), 500); // Example: Set visibility after a 500ms delay
+  });
+  
+  const [isVisible, setIsVisible] = createSignal(false);
+  const fadeInStyle = {
+    opacity: isVisible() ? 1 : 0,
+    transition: 'opacity 0.5s',
+  };
   
   return (
     <section class="featured-section">
@@ -20,7 +31,7 @@ const FeaturedSection = () => {
         <div class="row justify-content-center">
           <div class="col-lg-4 col-12 mb-4 mb-lg-0">
           {isImageReady() && (
-            <div class="custom-block bg-white shadow-lg">
+            <div class="custom-block bg-white shadow-lg " style={fadeInStyle}>
               <a href="topics-detail.html">
                 <div class="d-flex">
                   <div>
