@@ -12,12 +12,12 @@ const FeaturedSection = () => {
                   <div>
                     <h5 class="mb-2">Persiapan Data Geospasial</h5>
                     <p class="mb-0">
-                     bjkajdsfsoafhaf ajsdfjafaknfa lknfkajb
+                      Pembuatan Peta Topografi DIY & JATENG Helai 3209 - 1 dan peta tematik kecamatan ngaglik
                     </p>
                   </div>
                   <span class="badge bg-design rounded-pill ms-auto">14</span>
                 </div>
-                <img src="images/topics/undraw_Remote_design_team_re_urdx.png" class="custom-block-image img-fluid" alt="" />
+                <img src="https://drive.google.com/uc?export=view&id=1QlaiYn1fLrV333DFt0t_zOWjsPbdCcQ-" class="custom-block-image img-fluid" alt="" />
               </a>
             </div>
           </div>
