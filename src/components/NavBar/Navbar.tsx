@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav class="navbar navbar-expand-lg sticky-top" style={{ "--bg-color": "var(--primary-color)" }}>
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/logo-trans.png" alt="Logo" width={"80px"}/>
+          <img src="logo-trans.png" alt="Logo" width={"80px"}/>
         </a>
 
         <div class="d-lg-none ms-auto me-4">
