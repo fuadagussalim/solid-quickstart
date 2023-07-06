@@ -43,7 +43,7 @@ const Navbar = () => {
 
             <li class="nav-item">
               <a class="nav-link click-scroll" href="#section_3">
-                Metodologi
+                Metodologidafa
               </a>
             </li>
 
