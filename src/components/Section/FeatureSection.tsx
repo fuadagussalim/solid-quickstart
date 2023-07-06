@@ -43,9 +43,9 @@ const FeaturedSection = () => {
                 <img src="images/businesswoman-using-tablet-analysis.jpg" class="custom-block-image img-fluid" alt="" />
                 <div class="custom-block-overlay-text d-flex">
                   <div>
-                    <h5 class="text-white mb-2">Observasi Lapangan</h5>
+                    <h5 class="text-white mb-2">Pengenalan Bentang Lahan</h5>
                     <p class="text-white">
-                      dfkadfao aksjdfbakjdf aksdjfbkaf aksdjfbakj
+                      Observasi Lapangan pada Bentang Lahan di Sabo Bronggang, Kali Code, Graben Bantul, Pesisir Parangtrits
                     </p>
                     <a href="" class="btn custom-btn mt-2 mt-lg-3">Selengkapnya</a>
                   </div>
