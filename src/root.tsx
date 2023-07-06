@@ -22,7 +22,7 @@ function App() {
         <Title>SolidStart - Bare</Title>
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
         
         <link rel="preconnect" href="https://fonts.gstatic.com" />
 
@@ -32,7 +32,7 @@ function App() {
 
         <link href="src/components/css/bootstrap-icons.css" rel="stylesheet"/>
 
-        <link href="src/components/css/templatemo-topic-listing.css" rel="stylesheet"/>   */}
+        <link href="src/components/css/templatemo-topic-listing.css" rel="stylesheet"/>  
 
       </Head>
       <Body>
