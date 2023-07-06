@@ -1,6 +1,19 @@
-import { createSignal } from "solid-js";
+
+import { createEffect, createSignal } from 'solid-js';
 
 const FeaturedSection = () => {
+  const [isImageReady, setIsImageReady] = createSignal(false);
+
+  createEffect(() => {
+    const img = new Image();
+  
+    img.onload = () => {
+      setIsImageReady(true);
+    };
+  
+    img.src = 'https://example.com/path/to/image.jpg'; // Replace with your image URL
+  });
+  
   return (
     <section class="featured-section">
       <div class="container">
@@ -17,6 +30,9 @@ const FeaturedSection = () => {
                   </div>
                   <span class="badge bg-design rounded-pill ms-auto">14</span>
                 </div>
+                {isImageReady() && (
+                   <img src="https://drive.google.com/uc?export=view&id=1QlaiYn1fLrV333DFt0t_zOWjsPbdCcQ-" alt="Image" />
+                    )}
                 <img src="https://drive.google.com/uc?export=view&id=1QlaiYn1fLrV333DFt0t_zOWjsPbdCcQ-" class="custom-block-image img-fluid" alt="" />
               </a>
             </div>
