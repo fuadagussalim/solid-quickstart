@@ -6,28 +6,7 @@ const HeroSection = () => {
     event.preventDefault();
     // Handle form submission logic
   };
-  createEffect(() => {
-    const linkElement1 = document.createElement("link");
-    linkElement1.rel = "stylesheet";
-    linkElement1.href = "./src/components/css/bootstrap-icons.css";
-    document.head.appendChild(linkElement1);
-
-    const linkElement2 = document.createElement("link");
-    linkElement2.rel = "stylesheet";
-    linkElement2.href = "./src/components/css/bootstrap.min.css";
-    document.head.appendChild(linkElement2);
-
-    const linkElement3 = document.createElement("link");
-    linkElement3.rel = "stylesheet";
-    linkElement3.href = "./src/components/css/templatemo-topic-listing.css";
-    document.head.appendChild(linkElement3);
-
-    return () => {
-      linkElement1.remove();
-      linkElement2.remove();
-      linkElement3.remove();
-    };
-  });
+  
 
   return (
     <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
