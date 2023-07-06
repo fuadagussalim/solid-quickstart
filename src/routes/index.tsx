@@ -1,15 +1,17 @@
-import { Title } from "solid-start";
-import Counter from "~/components/Counter";
+
+import Navbar from "~/components/NavBar/Navbar";
+import ExploreSection from "~/components/Section/ExploreSection";
+import FeaturedSection from "~/components/Section/FeatureSection";
+import HeroSection from "~/components/Section/HeroSection";
+
 
 export default function Home() {
   return (
     <main>
-      <Title>WebGIS  Kepanewon Ngaglik</Title>
-      <h1>Masih Proses Gaes</h1>
-      
-      <p>
-        Ditunggu..
-      </p>
+      <Navbar></Navbar>
+      <HeroSection></HeroSection>
+      <FeaturedSection></FeaturedSection>
+      <ExploreSection></ExploreSection>
     </main>
   );
 }

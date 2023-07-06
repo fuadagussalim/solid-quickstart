@@ -1,7 +1,6 @@
-// @refresh reload
 import { Suspense } from "solid-js";
 import {
-  A,
+  
   Body,
   ErrorBoundary,
   FileRoutes,
@@ -13,20 +12,31 @@ import {
   Title,
 } from "solid-start";
 import "./root.css";
+import Home from "./routes";
 
-export default function Root() {
+function App() {
   return (
-    <Html lang="en">
+    <>
       <Head>
         <Title>SolidStart - Bare</Title>
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet"/>
+                        
+        <link href="src/components/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <link href="src/components/css/bootstrap-icons.css" rel="stylesheet"/>
+
+        <link href="src/components/css/templatemo-topic-listing.css" rel="stylesheet"/>  
+
       </Head>
       <Body>
-        <Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
           <ErrorBoundary>
-            <A href="/">Index</A>
-            <A href="/about">About</A>
             <Routes>
               <FileRoutes />
             </Routes>
@@ -34,6 +44,25 @@ export default function Root() {
         </Suspense>
         <Scripts />
       </Body>
+    </>
+  );
+}
+
+function ErrorFallback(error: Error) {
+  return (
+    <div>
+      <h1>Error</h1>
+      <p>An error occurred: {error.message}</p>
+    </div>
+  );
+}
+
+function Root() {
+  return (
+    <Html lang="en">
+      <App />
     </Html>
   );
 }
+
+export default Root;
