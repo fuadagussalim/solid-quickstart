@@ -11,7 +11,7 @@ const FeaturedSection = () => {
       setIsImageReady(true);
     };
   
-    img.src = 'https://drive.google.com/uc?export=view&id=1QlaiYn1fLrV333DFt0t_zOWjsPbdCcQ-'; // Replace with your image URL
+    img.src = 'https://drive.google.com/uc?export=view&id=1a9M9RClIgU8vaxqBPWvW5grFdQZME-NB'; // Replace with your image URL
   });
   
   return (
@@ -32,7 +32,7 @@ const FeaturedSection = () => {
                   <span class="badge bg-design rounded-pill ms-auto">14</span>
                 </div>
                 
-                   <img src="https://drive.google.com/uc?export=view&id=1QlaiYn1fLrV333DFt0t_zOWjsPbdCcQ-" class="custom-block-image img-fluid" alt="Image" />
+                   <img src="https://drive.google.com/uc?export=view&id=1a9M9RClIgU8vaxqBPWvW5grFdQZME-NB" class="custom-block-image img-fluid" alt="Image" />
                     
                 
               </a>
