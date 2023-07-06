@@ -11,7 +11,7 @@ const FeaturedSection = () => {
       setIsImageReady(true);
     };
   
-    img.src = 'https://example.com/path/to/image.jpg'; // Replace with your image URL
+    img.src = 'https://drive.google.com/uc?export=view&id=1QlaiYn1fLrV333DFt0t_zOWjsPbdCcQ-'; // Replace with your image URL
   });
   
   return (
@@ -19,6 +19,7 @@ const FeaturedSection = () => {
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+          {isImageReady() && (
             <div class="custom-block bg-white shadow-lg">
               <a href="topics-detail.html">
                 <div class="d-flex">
@@ -30,12 +31,13 @@ const FeaturedSection = () => {
                   </div>
                   <span class="badge bg-design rounded-pill ms-auto">14</span>
                 </div>
-                {isImageReady() && (
+                
                    <img src="https://drive.google.com/uc?export=view&id=1QlaiYn1fLrV333DFt0t_zOWjsPbdCcQ-" class="custom-block-image img-fluid" alt="Image" />
-                    )}
+                    
                 
               </a>
             </div>
+            )}
           </div>
           <div class="col-lg-6 col-12">
             <div class="custom-block custom-block-overlay">
