@@ -9,12 +9,12 @@ const HeroSection = () => {
   createEffect(() => {
     const linkElement1 = document.createElement("link");
     linkElement1.rel = "stylesheet";
-    linkElement1.href = "./src/components/css/bootstrap.min.css";
+    linkElement1.href = "./src/components/css/bootstrap-icons.css";
     document.head.appendChild(linkElement1);
 
     const linkElement2 = document.createElement("link");
     linkElement2.rel = "stylesheet";
-    linkElement2.href = "./src/components/css//bootstrap.min.css";
+    linkElement2.href = "./src/components/css/bootstrap.min.css";
     document.head.appendChild(linkElement2);
 
     const linkElement3 = document.createElement("link");
